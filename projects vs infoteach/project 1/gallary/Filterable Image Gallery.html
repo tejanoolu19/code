@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- Design by foolishdeveloper.com-->
+<html lang="en">
+<head>
+  <title>filterable gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen">
+
+body{
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+/*.gallery*/
+.gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	background-color: #2a2932;
+	padding: 100px 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.gallery .gallery-filter .filter-item{
+	color: #ffffff;
+	font-size: 17px;
+  border: 2px solid white;
+	text-transform: uppercase;
+	display: inline-block;
+  border-radius: 20px;
+  margin-right: 8px;
+	cursor: pointer;
+  padding: 8px 20px 8px 20px;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: white;
+	border-color : #16b5ef;
+  background: #16b5ef;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+
+}
+.gallery .gallery-item-inner img{
+	width: 100%;
+  border: 3px solid #d4dad9;
+}
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+/*responsive*/
+@media(max-width: 491px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+}
+@media(max-width: 467px){
+    .gallery .gallery-item{
+		width: 100%;
+	}
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+}
+
+  </style>
+</head>
+<body>
+
+<section class="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="gallery-filter">
+				<span class="filter-item active" data-filter="all">all</span>
+				<span class="filter-item" data-filter="Woodpeaker">Woodpeaker</span>
+				<span class="filter-item" data-filter="parrot">Parrot</span>
+				<span class="filter-item" data-filter="peacock">Peacock</span>
+        <span class="filter-item" data-filter="kingfisher">kingfisher</span>
+			</div>
+		</div>
+		<div class="row">
+			<!-- gallery item start -->
+			
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="1.jpg" alt="parrot">
+				</div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="2.jpg" alt="parrot"></div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="3.jpg" alt="parrot"></div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="4.jpg" alt="parrot"></div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="5.jpg" alt="parrote"></div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="6.jpg" alt="parrot"></div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="7.jpg" alt="parrot">	</div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="8.jpg" alt="parrot"></div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="9.jpg" alt="parrot">	</div>
+			</div>
+			<div class="gallery-item parrot">
+				<div class="gallery-item-inner">
+					<img src="10.jpg" alt="parrot">	</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="11.jpg" alt="peacock"></div>
+			</div>
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="12.jpg" alt="peacock"></div>
+			</div>
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="13.jpg" alt="peacock"></div>
+			</div>
+
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="14.jpg" alt="peacock"></div>
+			</div>
+
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="15.jpg" alt="peacock"></div>
+			</div>
+
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="16.jpg" alt="peacock"></div>
+			</div>
+
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="17.jpg" alt="peacock"></div>
+			</div>
+
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="18.jpg" alt="peacock">	</div>
+			</div>
+
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="19.jpg" alt="peacock"></div>
+			</div>
+
+			
+
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			
+			
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item peacock">
+				<div class="gallery-item-inner">
+					<img src="19.jpg" alt="peacock"></div>
+			</div>
+			<!-- gallery item end -->
+      			<div class="gallery-item kingfisher">
+      				<div class="gallery-item-inner">
+						<img src="20.jpg" alt="kingfisher"></div>
+      			</div>
+
+				  <div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="21.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="22.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="23.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="24.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="25.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="26.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="27.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="28.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="29.jpg" alt="kingfisher"></div>
+				</div>
+				<div class="gallery-item kingfisher">
+					<div class="gallery-item-inner">
+					  <img src="30.jpg" alt="kingfisher"></div>
+				</div>
+				
+
+				 
+
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="31.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="32.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<!-- gallery item start -->
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="33.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="34.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="35.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="36.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="37.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="38.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			<div class="gallery-item Woodpeaker">
+				<div class="gallery-item-inner">
+					<img src="39.jpg" alt="Woodpeaker">
+				</div>
+			</div>
+			
+			<!-- gallery item end -->
+		</div>
+	</div>
+</section>
+
+<script>
+
+
+ const filterContainer = document.querySelector(".gallery-filter"),
+ galleryItems = document.querySelectorAll(".gallery-item");
+
+ filterContainer.addEventListener("click", (event) =>{
+   if(event.target.classList.contains("filter-item")){
+   	 // deactivate existing active 'filter-item'
+   	 filterContainer.querySelector(".active").classList.remove("active");
+   	 // activate new 'filter-item'
+   	 event.target.classList.add("active");
+   	 const filterValue = event.target.getAttribute("data-filter");
+   	 galleryItems.forEach((item) =>{
+       if(item.classList.contains(filterValue) || filterValue === 'all'){
+       	item.classList.remove("hide");
+       	 item.classList.add("show");
+       }
+       else{
+       	item.classList.remove("show");
+       	item.classList.add("hide");
+       }
+   	 });
+   }
+ });
+</script>
+</body>
+</html>
